@@ -6409,6 +6409,21 @@ extern "C" {
         handler_id: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
 }
+extern "C" {
+    pub fn _BPF_MOV64_IMM(dst: __u8, imm: __s32) -> bpf_insn;
+}
+extern "C" {
+    pub fn _BPF_ALU64_IMM(op: __u8, dst: __u8, imm: __s32) -> bpf_insn;
+}
+extern "C" {
+    pub fn _BPF_JMP_IMM(op: __u8, dst: __u8, imm: __s32, off: __s16) -> bpf_insn;
+}
+extern "C" {
+    pub fn _BPF_JMP32_IMM(op: __u8, dst: __u8, imm: __s32, off: __s16) -> bpf_insn;
+}
+extern "C" {
+    pub fn _BPF_EXIT_INSN() -> bpf_insn;
+}
 pub type __builtin_va_list = [__va_list_tag; 1usize];
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
