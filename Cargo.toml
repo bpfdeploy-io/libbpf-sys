@@ -1,24 +1,19 @@
 [package]
-name = "libbpf-sys"
-version = "0.8.3+v0.8.1"
-description = "Rust bindings to libbpf from the Linux kernel"
+name = "bpfdeploy-libbpf-sys"
+version = "1.0.1+v1.0.0"
+description = "Fork of libbpf-sys"
 readme = "README.md"
-repository = "https://github.com/libbpf/libbpf-sys"
-homepage = "https://github.com/libbpf/libbpf-sys"
+repository = "https://github.com/bpfdeploy-io/libbpf-sys"
+homepage = "https://bpfdeploy.io"
 keywords = ["bpf", "ebpf", "xdp"]
 authors = [
-	"Alex Forster <alex@alexforster.com>",
-	"Dan Siemon <dan@coverfire.com>",
-	"Daniel Xu <dxu@dxuuu.xyz>",
+	"Milan <milan@mdaverde.com>",
+	"bpfdeploy.io <team@bpfdeploy.io>"
 ]
 license = "BSD-2-Clause"
 edition = "2018"
 build = "build.rs"
-links = "libbpf"
-
-[badges]
-travis-ci = { repository = "libbpf/libbpf-sys" }
-maintenance = { status = "passively-maintained" }
+links = "libbpf-bpfdeploy"
 
 [build-dependencies]
 bindgen = { version = "^0.60", optional = true }

@@ -1,4 +1,8 @@
-# libbpf-sys [![Travis CI build status badge](https://app.travis-ci.com/libbpf/libbpf-sys.svg?branch=master)](https://app.travis-ci.com/libbpf/libbpf-sys) [![crates.io version number badge](https://img.shields.io/crates/v/libbpf-sys.svg)](https://crates.io/crates/libbpf-sys)
+# bpfdeploy-libbpf-sys
+
+**Warning**: This is a fork of [libbpf-sys](https://github.com/libbpf/libbpf-sys). Ideally, we intend to upstream most of the changes here, but until then this fork will be maintained for the [bpfdeploy.io crate](https://crates.io/crates/bpfdeploy-libbpf-sys).
+
+---
 
 **Rust bindings to _libbpf_ from the Linux kernel**
 

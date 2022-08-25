@@ -2,7 +2,7 @@
 
 #[cfg(test)]
 mod tests {
-    use libbpf_sys::*;
+    use bpfdeploy_libbpf_sys::*;
 
     unsafe extern "C" fn print_fn(
         _level: libbpf_print_level,
